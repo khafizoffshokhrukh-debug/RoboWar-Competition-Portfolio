@@ -59,14 +59,9 @@ I worked on:
 * 🛠️ Supporting the team during assembly and testing
 
 ### CAD Design
-
-![CAD Overview](CAD/cad-overview.png)
-
-![Chassis Design](CAD/chassis.png)
-
-![Mechanical Mechanism](CAD/mechanism.png)
-
-![Robot Assembly](CAD/assembly.png)
+<img width="1224" height="707" alt="Снимок экрана 2026-09-08 121204" src="https://github.com/user-attachments/assets/20d1371b-7fd2-48fc-86b4-e96a33119e66" />
+<img width="1378" height="908" alt="Снимок экрана 2026-09-08 121214" src="https://github.com/user-attachments/assets/4a7854a6-e144-41a8-86c8-d8cd01c7c4b6" />
+<img width="1292" height="763" alt="Снимок экрана 2026-09-08 121225" src="https://github.com/user-attachments/assets/0e4052b3-39cc-4ffe-99f0-5bf0b12df4ec" />
 
 ---
 
@@ -138,22 +133,23 @@ The robot's electronic system was designed to provide reliable control during co
 
 | Component       | Purpose                    |
 | --------------- | -------------------------- |
-| Microcontroller | Main robot control         |
-| Motor Driver    | Motor control              |
-| Motors          | Robot movement             |
-| Battery         | Power supply               |
-| Sensors         | Robot feedback / detection |
-| Switches        | Power and system control   |
+| Microcontroller | Arduino NANO               |
+| Motor Driver    | BTS 7960                   |
+| Motors          | JGB-370 600rpm             |
+| Battery         | Ovonic 4s 1750mah          |
+| Wiring          | Silicone Wiring            |
+| Bearings        | Go Bilda bearings          |
 
 > The exact components and wiring diagrams are documented in the `Electronics/` folder.
 
-### Electronics
+### Radio
 
-![Electronics](Electronics/electronics.jpg)
+<img width="750" height="1000" alt="6f8c0b66-2b55-43e9-a0b4-ee9f98cc9c03" src="https://github.com/user-attachments/assets/5eac0b63-1f07-43f7-aea7-a4a18663b42e" />
 
-### Wiring
+### ExpressLRS
 
-![Wiring](Electronics/wiring.jpg)
+<img width="807" height="807" alt="H40ced46e7fe44687a9d74ddbcd711ed5t" src="https://github.com/user-attachments/assets/2f973de5-2879-4366-94cc-73f9f185cfa3" />
+
 
 ---
 
@@ -269,33 +265,33 @@ Real competition footage and robot battles are available in the project media co
 
 ### Battle 01
 
-[▶️ Watch Battle 01](Videos/videos.md)
+[▶️ Watch Battle 01](https://www.youtube.com/watch?v=ttD957xNLTk)
 
 ### Battle 02
 
-[▶️ Watch Battle 02](Videos/videos.md)
+[▶️ Watch Battle 02](https://www.youtube.com/watch?v=o5U7KP0Lmo4)
 
 ### Competition Highlights
 
-[▶️ Watch Competition Highlights](Videos/videos.md)
+[▶️ Watch Competition Highlights](https://www.youtube.com/shorts/mWc8ZS2Xklg)
 
 ---
 
 # 📸 Gallery
 
-## Robot
+## Achieve
+<img width="1920" height="2560" alt="photo_2026-07-09_23-42-53" src="https://github.com/user-attachments/assets/bc600847-e294-44f8-9815-2cfafbe4854c" />
+ments
 
-![Robot](Robot/final-robot.jpg)
+
 
 ## Team
 
-![Team](Team/team-photo.jpg)
+<img width="960" height="1280" alt="photo_2026-07-13_19-55-42" src="https://github.com/user-attachments/assets/77e740c8-f47a-4663-b24b-3537425b6aa8" />
 
 ## Competition
 
-![Competition](Competition/battles-01.jpg)
-
-![Competition](Competition/battles-02.jpg)
+<img width="1280" height="960" alt="photo_2026-07-13_19-54-44" src="https://github.com/user-attachments/assets/edd56504-e785-4194-a9a0-41944a4a438e" />
 
 ---
 
