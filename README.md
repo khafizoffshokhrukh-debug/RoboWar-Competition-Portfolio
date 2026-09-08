@@ -133,7 +133,7 @@ The robot's electronic system was designed to provide reliable control during co
 
 | Component       | Purpose                    |
 | --------------- | -------------------------- |
-| Microcontroller | Arduino NANO               |
+| Microcontroller | ESP 32 WROOM               |
 | Motor Driver    | BTS 7960                   |
 | Motors          | JGB-370 600rpm             |
 | Battery         | Ovonic 4s 1750mah          |
@@ -161,17 +161,117 @@ The programming was responsible for controlling the robot's electronic and movem
 
 ### Code Structure
 
-The source code is available in:
+The source code is available in: Arduino ide
 
-```text
-Code/
-└── source/
-```
+#include <ESP32Servo.h>
 
-![Control System](Electronics/electronics-diagram.png)
+#define L_RPWM 25
+#define L_LPWM 26
 
----
+#define R_RPWM 27
+#define R_LPWM 14
 
+#define ESC_PIN 13
+
+Servo esc;
+
+#define PWM_FREQ 20000
+#define PWM_RES 8
+
+void setup() {
+  ledcAttach(L_RPWM, PWM_FREQ, PWM_RES);
+  ledcAttach(L_LPWM, PWM_FREQ, PWM_RES);
+  ledcAttach(R_RPWM, PWM_FREQ, PWM_RES);
+  ledcAttach(R_LPWM, PWM_FREQ, PWM_RES);
+
+  esc.attach(ESC_PIN, 1000, 2000);
+
+  stopMotors();
+  
+  esc.writeMicroseconds(1000);
+  delay(3000);
+}
+
+void loop() {
+
+
+  forward(150);
+  delay(2000);
+
+  stopMotors();
+  delay(1000);
+
+  backward(150);
+  delay(2000);
+  
+  stopMotors();
+  delay(1000);
+
+  turnRight(150);
+  delay(1000);
+
+  stopMotors();
+  delay(1000);
+
+  turnLeft(150);
+  delay(1000);
+
+  stopMotors();
+  delay(2000);
+}
+
+
+void forward(int speed) {
+  speed = constrain(speed, 0, 255);
+
+  ledcWrite(L_RPWM, speed);
+  ledcWrite(L_LPWM, 0);
+
+  ledcWrite(R_RPWM, speed);
+  ledcWrite(R_LPWM, 0);
+}
+
+
+void backward(int speed) {
+  speed = constrain(speed, 0, 255);
+
+  ledcWrite(L_RPWM, 0);
+  ledcWrite(L_LPWM, speed);
+
+  ledcWrite(R_RPWM, 0);
+  ledcWrite(R_LPWM, speed);
+}
+
+
+void turnRight(int speed) {
+  speed = constrain(speed, 0, 255);
+
+  ledcWrite(L_RPWM, speed);
+  ledcWrite(L_LPWM, 0);
+
+  ledcWrite(R_RPWM, 0);
+  ledcWrite(R_LPWM, speed);
+}
+
+
+void turnLeft(int speed) {
+  speed = constrain(speed, 0, 255);
+
+  ledcWrite(L_RPWM, 0);
+  ledcWrite(L_LPWM, speed);
+
+  ledcWrite(R_RPWM, speed);
+  ledcWrite(R_LPWM, 0);
+}
+
+
+void stopMotors() {
+  ledcWrite(L_RPWM, 0);
+  ledcWrite(L_LPWM, 0);
+
+  ledcWrite(R_RPWM, 0);
+  ledcWrite(R_LPWM, 0);
+}
 # 🧪 Testing & Development
 
 Before competitions, the robot went through multiple testing stages.
@@ -236,28 +336,15 @@ Our team achieved the following results across RoboWar competitions:
 | 🥈 **2nd Place** |  **2** |
 
 ## 🥇 6× First Place
+<img width="1920" height="2560" alt="photo_2026-07-18_19-14-18" src="https://github.com/user-attachments/assets/12ea847f-6971-4d68-a596-92a68a00ac0d" />
 
-![1st Place](Achievements/1st-place-01.jpg)
-
-![1st Place](Achievements/1st-place-02.jpg)
-
-![1st Place](Achievements/1st-place-03.jpg)
-
-![1st Place](Achievements/1st-place-04.jpg)
-
-![1st Place](Achievements/1st-place-05.jpg)
-
-![1st Place](Achievements/1st-place-06.jpg)
-
----
 
 ## 🥈 2× Second Place
 
-![2nd Place](Achievements/2nd-place-01.jpg)
 
-![2nd Place](Achievements/2nd-place-02.jpg)
+<img width="1920" height="2560" alt="photo_2026-07-18_19-14-15" src="https://github.com/user-attachments/assets/1da90882-296b-44a8-b79c-557806ad5b86" />
 
----
+
 
 # 🎥 Battle Highlights
 
