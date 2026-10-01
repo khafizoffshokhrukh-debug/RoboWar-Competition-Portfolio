@@ -1,4 +1,4 @@
-# 🤖 RoboWar — Competition Robot
+# 🤖 RoboWar — Competition Robotc shokh lox
 
 <p align="center">
 
