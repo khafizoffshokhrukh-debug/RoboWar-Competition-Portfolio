@@ -272,33 +272,6 @@ void stopMotors() {
   ledcWrite(R_RPWM, 0);
   ledcWrite(R_LPWM, 0);
 }
-# 🧪 Testing & Development
-
-Before competitions, the robot went through multiple testing stages.
-
-### 01 — Concept
-
-![Concept](Development/01-concept.jpg)
-
-### 02 — CAD
-
-![CAD](Development/02-cad.jpg)
-
-### 03 — Parts
-
-![Parts](Development/03-parts.jpg)
-
-### 04 — Assembly
-
-![Assembly](Development/04-assembly.jpg)
-
-### 05 — Testing
-
-![Testing](Development/05-testing.jpg)
-
-### 06 — Final Robot
-
-![Final Robot](Development/06-final-robot.jpg)
 
 ---
 
@@ -316,15 +289,8 @@ Competition experience helped us improve:
 * Repair and troubleshooting
 * Competition preparation
 
-### Competition Moments
+)
 
-![Competition](Competition/competition-01.jpg)
-
-![Competition](Competition/competition-02.jpg)
-
-![Competition](Competition/competition-03.jpg)
-
----
 
 # 🏆 Competition Record
 
@@ -460,7 +426,6 @@ This project represents practical experience in **robotics, CAD, mechanical engi
 
 ---
 
-<p align="center">
 
 ## 🤖 Designed • Built • Tested • Competed
 
