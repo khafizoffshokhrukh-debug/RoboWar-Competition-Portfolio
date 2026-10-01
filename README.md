@@ -81,19 +81,17 @@ The development focused on:
 
 ### Final Robot
 
-![Final Robot](Robot/final-robot.jpg)
+<img width="2560" height="2560" alt="photo_2026-10-01_20-16-01" src="https://github.com/user-attachments/assets/20e4f22b-60c1-407b-a169-a4d30bfe54b8" />
 
-### Front View
 
-![Robot Front](Robot/robot-front.jpg)
+
 
 ### Side View
-
-![Robot Side](Robot/robot-side.jpg)
+<img width="2560" height="2560" alt="photo_2026-09-21_19-08-52" src="https://github.com/user-attachments/assets/076b5885-bfbe-44b5-8861-7a7f73a737f3" />
 
 ### Top View
 
-![Robot Top](Robot/robot-top.jpg)
+<img width="2560" height="2560" alt="photo_2026-10-01_20-15-56" src="https://github.com/user-attachments/assets/ba79fa17-7782-42f9-9b30-63d97168c400" />
 
 ---
 
